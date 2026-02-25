@@ -1,0 +1,5 @@
+# Force GitHub to detect the main language as TypeScript
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true

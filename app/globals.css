@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  --font-sans: var(--font-inter), 'Inter', sans-serif;
+  --font-mono: 'Ui-Monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", monospace;
+  --font-display: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
+
+  --color-background-dark: #0B0F19;
+  --color-background-light: #F8FAFC;
+
+  --color-cyan-500: #06B6D4;
+  --color-purple-500: #8B5CF6;
+  --color-green-500: #10B981;
+
+  --color-primary: #8B5CF6;
+  --color-secondary: #06B6D4;
+
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background-dark);
+    color: #ffffff;
+    font-family: var(--font-sans);
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #06B6D4, #8B5CF6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
